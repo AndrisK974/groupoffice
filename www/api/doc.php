@@ -15,7 +15,7 @@ App::get()->setAuthState(new State());
 
 $entities = [];
 
-$parser = new PhpdocParser(PhpDocumentor::tags()->with([new Summery()]));
+$parser = new PhpdocParser(PhpDocumentor::tags()->with([new Summery()])->ignoreUnknown());
 
 $toc = [];
 
